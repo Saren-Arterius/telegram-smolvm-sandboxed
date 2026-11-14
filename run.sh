@@ -1,6 +1,11 @@
 #!/bin/sh
 # Telegram Desktop in a smolvm microVM. Wayland goes through waypipe over one mounted socket.
 set -eu
+# [s]: so pkill doesn't match a shell whose command line has this pattern.
+vm='[s]molvm-bin machine run .*telegram-waypipe'
+[ "${1-}" = stop ] && exec pkill -TERM -f "$vm"
+# ponytail: already running, do nothing. Two Telegrams on one ./home damage it. Focusing the window needs more.
+pgrep -f "$vm" >/dev/null && exit 0
 cd "$(dirname "$0")"
 dl=${XDG_DOWNLOAD_DIR:-$(xdg-user-dir DOWNLOAD)}
 mkdir -p home bin share "$dl/Telegram Desktop"

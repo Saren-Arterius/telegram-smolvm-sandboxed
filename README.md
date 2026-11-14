@@ -76,8 +76,10 @@ After the first start, the VM starts in less than one second.
 ## Start and stop Telegram
 
 To start Telegram, click "Telegram (smolvm)" in your app menu. You can also type `./run.sh`.
+If Telegram runs, this does nothing. Two Telegrams that use the same `home` folder can damage it.
 
-To stop Telegram, close Telegram. The VM stops when Telegram stops.
+To stop Telegram, right-click "Telegram (smolvm)" and click "Stop Telegram". You can also type `./run.sh stop`.
+The "Quit" item of the dock does not always stop the VM.
 
 ## What Telegram can see
 

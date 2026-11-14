@@ -9,3 +9,9 @@ Type=Application
 StartupWMClass=TelegramDesktop
 Categories=Chat;Network;InstantMessaging;Qt;
 Keywords=tg;chat;im;messaging;messenger;
+Actions=stop;
+
+[Desktop Action stop]
+Name=Stop Telegram
+Exec=@DIR@/run.sh stop
+Icon=media-playback-stop
