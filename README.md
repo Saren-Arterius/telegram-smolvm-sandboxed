@@ -4,8 +4,9 @@
 
 This project runs Telegram Desktop in a small virtual machine (VM).
 
-Telegram can run code from messages. Bad code in a message can attack your computer.
-The VM stops this code from getting to your files, your network, and your account.
+In November 2026, Telegram had a security bug: a message could run bad code on the device.
+Telegram repaired this bug. But a new bug of this type can occur in the future.
+If it occurs, the VM stops the bad code from getting to your files, your network, and your account.
 
 The VM has its own Linux kernel. If bad code breaks the kernel in the VM,
 the kernel of your computer is still safe.
