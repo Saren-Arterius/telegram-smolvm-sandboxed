@@ -1,0 +1,6 @@
+home/
+bin/
+share/
+image.tar
+*.tar.xz
+run.log

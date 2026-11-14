@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Telegram (smolvm)
+Comment=Telegram Desktop in a microVM
+# Install under Telegram's Wayland app ID as file name, see README.
+Exec=@DIR@/run.sh
+Icon=telegram
+Terminal=false
+Type=Application
+StartupWMClass=TelegramDesktop
+Categories=Chat;Network;InstantMessaging;Qt;
+Keywords=tg;chat;im;messaging;messenger;
